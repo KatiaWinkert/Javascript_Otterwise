@@ -14,6 +14,6 @@ console.log(reslt)*/
 const result = (() =>{
     console.log('hello world')
 })() 
-jh
+
 
 
