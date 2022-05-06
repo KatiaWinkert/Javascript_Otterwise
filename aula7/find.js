@@ -7,15 +7,16 @@ const findElement = array.find((elem) => {
 console.log(findElement)
 
 
-const cadastro = [{name:' Katia', age: 33}, {name: 'Julio', age: 25}]
+const cadastro = [{name:' Katia', age: 33}, {name: 'Amanda', age: 25}]
 
-const ctt = cadastro.find(elem =>{
+let ctt = cadastro.find(elem =>{
     return elem.name === 'Julio'
 })
 
 if (!ctt){
     console.log('Não encontrei o elemento!')
     // Tratamento caso nao encontre o elemento ! ele da essa resposta e retorna underfined.
+ctt = { name: "Default user"}
 }
 
 
