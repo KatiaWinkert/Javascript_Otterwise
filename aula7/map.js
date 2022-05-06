@@ -1,4 +1,4 @@
-const array = [ 1, 2, 3, 4, 5]
+const array = [ 1, 2, 3, 4, 5] // map ele percorreo todo o arrei e da o retorno pedido no return seja expressão ou string 
 
 const mapArray = array.map(elem => {
     return elem *10
