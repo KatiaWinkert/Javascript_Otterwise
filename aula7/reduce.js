@@ -17,6 +17,21 @@ const arrayline = [ -42 , -100 , -8.5, 20 , 200 , 20 ]
 const funnyArray = arrayline.reduce((acc, elem) => {
     console.log('acc:' , acc, 'elem:', elem)
    return acc + elem
-},0)
+}, 0)
 
 console.log(funnyArray)
+
+const bella = [ -42 , -100 , -8.5 ,20 ,200 ,20 ]
+
+const pillBella = bella.reduce((acc, elem) => {
+    console.log('acc:' , acc)
+    if(elem < 0){
+        acc.negativo.push(elem)
+    } else {
+        acc.positivo.push(elem)
+    } return acc 
+},
+{
+    negativo : [],
+    positivo : [],
+})
