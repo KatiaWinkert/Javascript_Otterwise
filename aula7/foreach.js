@@ -16,4 +16,4 @@ const array = [10,20,30,40,50]
   console.log(value)
 })*/ 
 
-array.forEach ((value , i) => console.log(`${i}: ${value}`)) // sem o retorno  4° Exemplo: 
+array.forEach ((value , i,) => console.log(`${i}: ${value}`)) // sem o retorno  4° Exemplo: 
