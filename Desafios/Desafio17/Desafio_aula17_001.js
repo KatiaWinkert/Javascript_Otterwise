@@ -89,3 +89,5 @@ console.log('A): ----------------------------------------------------------')
   console.log('Exercicio D)')
   console.log(imprime(colaboradores))
   console.log("----------------------------------------------------------------")
+
+  
