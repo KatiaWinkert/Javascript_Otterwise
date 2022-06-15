@@ -16,5 +16,13 @@
   console.log('Atividade A):')
   console.log(totalValor(installments))
   console.log('----------------------------------')
+
+  function valorImpreso(c){
+    const press = c.reduce (( acc, elem ) => {
+        if (elem.status === 'Pago') {
+            acc.total_pago = acc.total_pago + elem.value 
+        }
+    })
+  }
   
   
