@@ -20,9 +20,9 @@
   function valorImpreso(c){
     const press = c.reduce (( acc, elem ) => {
         if (elem.status === 'Pago') {
-            acc.total_pago = acc.Pago+ elem.value
+            acc.total_pago = acc.total_pago + elem.value
         } else {
-            acc.total_aberto = acc.Aberto + elem.value
+            acc.total_aberto = acc.total_aberto + elem.value
         }
         return acc
     },  
@@ -36,5 +36,43 @@
   console.log('Exercicio B')
   console.log(valorImpreso(installments))
   console.log('------------------------------')
+
+ function listOrdenada (a) {
+    let listdeCrecent = a.sort((a,b) => a.value - b.value )
+    return listdeCrecent
+ }
+
+ console.log('Exercicio C')
+ console.log(listOrdenada(installments))
+ console.log('-----------------------------')
+
+
+
+
+
   
-  
+  function order (dado) {
+    const orderDecre = dado.sort((b,c) => {
+        if(b.value < c.value) {
+            return -1
+        } if (b.value > c.value ){
+            return 1 
+        }
+    
+        if (b.value === c.value) {
+            return b.parcela_number > c.parcela_number 
+            -1
+        } else { 
+            return b.parcela_number < c.parcela_number 
+            1
+            
+        }
+
+
+    },0)
+    return orderDecre
+  } 
+
+  console.log('Exercicio D')
+  console.log(order(installments))
+console.log('--------------------------------')
