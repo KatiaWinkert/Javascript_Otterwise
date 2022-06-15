@@ -1,8 +1,8 @@
  const  installments =  [
-    {  parcela_number : 1 ,  valor: 123.45,  status : 'Pago'  } ,
-    {  parcela_number : 2 ,  valor: 139.88,  status : 'Pago'  } ,
-    {  parcela_number : 3 ,  valor: 123.45,  status : 'Pago'  } ,
-    {  parcela_number : 4 ,  valor: 182.37,  status : 'Aberto'  } ,
+    {  parcela_number : 1 ,  value: 123.45,  status : 'Pago'  } ,
+    {  parcela_number : 2 ,  value: 139.88,  status : 'Pago'  } ,
+    {  parcela_number : 3 ,  value: 123.45,  status : 'Pago'  } ,
+    {  parcela_number : 4 ,  value: 182.37,  status : 'Aberto'  } ,
     {  parcela_number : 5 ,  value: 133.93,  status : 'Aberto'  } ,
   ]
 
@@ -20,9 +20,21 @@
   function valorImpreso(c){
     const press = c.reduce (( acc, elem ) => {
         if (elem.status === 'Pago') {
-            acc.total_pago = acc.total_pago + elem.value 
+            acc.total_pago = acc.Pago+ elem.value
+        } else {
+            acc.total_aberto = acc.Aberto + elem.value
         }
+        return acc
+    },  
+    {
+        total_pago: 0, 
+        total_aberto : 0,
     })
+    return press
   }
+
+  console.log('Exercicio B')
+  console.log(valorImpreso(installments))
+  console.log('------------------------------')
   
   
