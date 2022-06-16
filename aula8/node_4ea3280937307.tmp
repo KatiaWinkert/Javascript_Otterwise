@@ -6,4 +6,4 @@ console.log(p1)
 
 setInterval(() => {
     console.log('hello world')
-}, 10 )
+}, 2000 )
