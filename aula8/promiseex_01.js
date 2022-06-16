@@ -1,9 +1,7 @@
-const p1 = new Promise ((resolve, reject) => {
+const p1 = new Promise((resolve, reject) => {
+  setInterval(() => {
     resolve('sucesso')
+  }, 2000)
 })
 
 console.log(p1)
-
-setInterval(() => {
-    console.log('hello world')
-}, 10 )
