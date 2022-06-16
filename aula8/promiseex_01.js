@@ -1,5 +1,5 @@
 const p1 = new Promise((resolve, reject) => {
-  setInterval(() => {
+  setTimeout(() => {
     resolve('sucesso')
   }, 2000)
 })
@@ -7,7 +7,7 @@ const p1 = new Promise((resolve, reject) => {
 p1.then((resp) => {
   console.log(resp)
   return 'terminou'
-}).then(resp => {
+}).then((resp) => {
   console.log(resp)
 })
 
