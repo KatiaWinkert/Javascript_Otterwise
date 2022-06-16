@@ -13,7 +13,7 @@ const p1 = () =>
 const p2 = () =>
   new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve('Resolve p2')
+      reject('Resolve p2')
     }, 1000)
   })
 
@@ -24,12 +24,12 @@ const p3 = () =>
     }, 3000)
   })
 
-Promise.all([p1(), p2(), p3()])
+Promise.race([p1(), p2(), p3()])
   .then((resp) => {
-    console.log(resp)
+    console.log('then: ', resp)
   })
   .catch((error) => {
-    console.log(error)
+    console.log('Catch: ', error)
   })
   .finally(() => {
     console.log('Final')
