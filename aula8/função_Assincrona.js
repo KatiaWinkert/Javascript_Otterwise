@@ -26,16 +26,20 @@ const p3 = () =>
     console.log('then: ', resp)
   })
 
-async function execPromise() {
-  const resp = await p1()
-  console.log(resp)
-  console.log('final')
+const execPromise = async () => {
+  try {
+    const resp = await p3()
+    console.log('try: ', resp)
+  } catch (error) {
+    console.log('catch: ', error)
+  } finally {
+    console.log('Final')
+  }
 }
 
 execPromise()
 // voce pode tb ter uma função anonima assincrona ( const execpromise = async function(){ ... }) que vai funcionar
 // E você pode ter uma aerron function assincrona (const execpromise = async ()  => { ... }) que vai funcionar)
-
 
 /*  .catch((error) => {
     console.log('Catch: ', error)
