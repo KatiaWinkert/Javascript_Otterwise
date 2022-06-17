@@ -2,7 +2,7 @@ const value = 10
 
 const p1 = new Promise((resolve, reject) => {
   setTimeout(() => {
-    if (typeof value === 'number') {
+    if (typeof value !== 'number') {
       reject('Argumento não é um numero!')
     }
     resolve(value * 10)
