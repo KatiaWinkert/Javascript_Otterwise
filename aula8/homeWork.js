@@ -1,5 +1,5 @@
 // Exercicio 1. Crie 3 Promise usando setTimeout:
-const valor = 5
+const valor = 10
 const numero = 10
 
 const a1 = () =>
