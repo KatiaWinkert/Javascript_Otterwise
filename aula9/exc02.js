@@ -2,12 +2,19 @@
 const user = {
   nome: 'Katia',
   idade: 33,
+  project: {
+    name: 'Projecto 1'
+  }
 }
 
-const { nome: username } = user
-console.log(username)
+const { nome, idade } = user
 
-// exemplos de como posso fazer o pedido da atribuição do  objeto
+const {project: Projecto} = user
+const [name] = project 
+
+console.log()
+console.log(nome, idade)
+
 // let name = user.nome
 // let age = user['idade']
-// na Desistruturação o nome da variavel pode ser igual o nome da propriedade. 
+// na Desistruturação o nome da variavel pode ser igual o nome da propriedade.
