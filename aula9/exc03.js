@@ -13,11 +13,8 @@ const user = {
   ],
 }
 
-const { projects : projetos} = user 
-console.log(projetos)
+const {
+  projects: [{ name: nameprojetos }],
+} = user 
 
-const [p1] = projetos 
-console.log(p1) 
-
-const { name : nameprojetos } = p1 
 console.log(nameprojetos)
