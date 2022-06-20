@@ -3,17 +3,21 @@ const user = {
   nome: 'Katia',
   idade: 33,
   project: {
-    name: 'Projecto 1'
+    name: 'Projecto'
   }
 }
+console.log(user)
+//const { nome, idade } = user
 
-const { nome, idade } = user
+//const {project: Projecto } = user
+//const {name} = project 
 
-const {project: Projecto} = user
-const [name] = project 
+const {
+  project: {name: nomedoprojecto }, 
+} = user 
 
-console.log()
-console.log(nome, idade)
+console .log(nomedoprojecto)
+
 
 // let name = user.nome
 // let age = user['idade']

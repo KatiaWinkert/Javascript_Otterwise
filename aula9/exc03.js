@@ -18,3 +18,8 @@ const {
 } = user 
 
 console.log(nameprojetos)
+
+//-------------------------------------- 
+
+const { projects: pro} = user 
+console.log(pro)
