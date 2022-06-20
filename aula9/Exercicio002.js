@@ -13,5 +13,33 @@ console.log(name)
 
 //B
 const pil = (...rest) => console.log(...rest)
-pil([1,2,3,4], "katia", "Nino Nenê", true === true)
+pil([1, 2, 3, 4], 'katia', 'Nino Nenê', true === true)
 //c
+const user = {
+  nome: 'Cindy',
+  idade: 3,
+  endereco: {
+    rua: 'Rua Central',
+    numero: 135,
+  },
+  projetos: ['Projeto 1', 'Projeto 2'],
+}
+const getname = ({ nome }) => console.log(nome)
+getname(user)
+
+// D
+const obj1 = {
+  nome: 'nino',
+}
+const obj2 = {
+  sobrenome: 'Winkert',
+}
+const groupobj = (obj1, obj2) => ({ ...obj1, ...obj2 })
+console.log(groupobj(obj1, obj2))
+
+//E.
+const array1 = [1, 2, 3]
+const array2 = [4, 5, 6]
+
+const up = (arra1, arra2) => [...arra1, ...arra2]
+console.log(up(array1, array2))
