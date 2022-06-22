@@ -1,0 +1,8 @@
+{
+  "name": "aula10",
+  "version": "1.0.0",
+  "description": "Projeto para aprendizado de pacotes",
+  "main": "index.js",
+  "author": "Katia Winkert",
+  "license": "MIT"
+}
