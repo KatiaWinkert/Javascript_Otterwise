@@ -1,17 +1,17 @@
-import { format, compareAsc } from 'date-fns'
+/*import formatterCurrency from './module.js'
 
-const formatWeb = format(new Date(), 'dd/MM/yyyy')
-//=> '02/11/2014'
-console.log(formatWeb)
+const result = formatterCurrency(20)
 
-const dates = [
-  new Date(1995, 6, 2),
-  new Date(1987, 1, 11),
-  new Date(1989, 6, 10),
-]
-dates.sort(compareAsc)
-//=> [
-//   Wed Feb 11 1987 00:00:00,
-//   Mon Jul 10 1989 00:00:00,
-//   Sun Jul 02 1995 00:00:00
-// ]
+console.log(result)*/ //=> Exemplo para um importação
+
+import { formatterCurrency  } from './module.js'
+
+const result = formatterCurrency(20)
+
+console.log(result)
+
+import { formatteOp as fc , name } from './module.js' // => para auterar o nome tem que colocar (as)
+
+const nuvem = fc(20)
+
+console.log(nuvem)
