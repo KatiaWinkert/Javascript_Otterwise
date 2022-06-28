@@ -1,0 +1,15 @@
+{
+  "name": "desafio022",
+  "version": "1.0.0",
+  "description": "Desafio Aula 22 ",
+  "main": "index.js",
+  "author": "Katia Winkert",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "date-fns": "^2.28.0"
+  },
+  "scripts": {
+    "start": "node --experimental-json-modules main.js"
+  }
+}
